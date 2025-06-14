@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+        content="width=device=width,
+        initial-scale=1.0"/>
+        <title>ATM TECH STUDIO</title>
+    <style>
+        * {margin: padding 0;box-sizing: border-box;}
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI',sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header{
+        background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a{
+            color: #ddd;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover{
+            color: #fff;
+        }
+        .hero{
+            background: green;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1{
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: 1.2rem;
+        }
+        section{
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #1c1c1c;
+        }
+        .services. {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+        .card{
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba( green, blue, alpha);
+    width: 280px;
+    text-align: center;
+    opacity: 0;
+
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+        }
+        .card img{
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        form{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px;
+            rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        form input,form textarea{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        form button{
+            background: #1c1c1c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        footer {
+            background: #1c1c1c;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+        @media(max-width: 768px){
+            .services.{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /*fade in animation*/
+        .reveal{
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        </style>
+    </head>
+    </body>
+
+    <header>
+        <h1> ATM Tech Studio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="contact">Contact</a>
+        </nav>
+        </header>
+        <div class="hero">
+            <h1>Building Digital Futures</h1>
+            <p>web|Mobile|Cybersecurity|Innovation|Graphics</p>
+         </div>
+         <section id="about">
+            <h2 class="section-title">About Us</h2>
+            <p class="card">
+                ATM Tech Studio is a vibrant forward-thinking technology company offering innovative
+                digital services to help businesses grow. Whether you are starting from scratch or
+                scaling fast,we design secure,scalable and timely  solutions to match your goals.
+            </p>
+         </section>
+         <section id="Services">
+            <h2 class="section-title">Our Services</h2>
+               
+                <div class="card">
+                    <img
+                    src="https://images.unsplash.com/photo
+                    -1522202176988-66273cfd55f" alt="web Development">
+                    <h3>Web Development</h3>
+                    <p>Modern,fast,mobile-first websites
+                         tailored to your brand</p>
+ </div>
+<div class="card">
+    <img
+    src="https://images.unsplash.com/photo
+    -1591696205602-2f950c417cb9"
+    alt="Cybersecurity">
+    <h3>Cybersecurity</h3>
+    <p>Protect your digital space with
+         ethical hacking & auditng services.</p>
+         </div>
+         <h3>IT Consultancy
+         </h3>
+         <p> Advice on system architecture,
+            strategy,and digitl transformation.
+         </p>
+         </div>
+         </section>
+         <section id="testimonials">
+            <h2 class="section-title">
+                Client Feedback
+            </h2>
+            <div class="testimonials">
+                <div class="card">
+        <p> "ATM Tech Studio built our startup 
+            website fast-and better than we imagined!"</p>
+            <strong>=Janet K.,Founder</strong>
+            </div>
+            <div class="card">
+                <p> Their Cybersecurity audit saved us
+                     from a major vulnerability.
+                    Highly recommend.</p>
+                    <strong>-Oscar N., IT Manager</strong>
+                    </div>
+                    </div>
+
+         </section>
+         
+         <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <form class="card">
+                <input type="text" placeholder="Your Name"required/>
+                <input type="email" placeholder="Your Email"required/>
+        <textarea rows="5" placeholder="Your
+         Message"required></textarea>
+         <button type="submit">Send Message</button>
+         </form>
+         </section>
+         <footer>
+            &copy; 2025 ATM Tech Studio.All rights reserved.
+            </footer>
+            <script>
+                //Reveal on scroll
+                const cards =
+                document.querySelectorAll('.card');
+                window.addEventListener('scroll',() =>{
+                    const trigger =window.innerHeight * 0.85;
+cards.forEach(card => {
+    const top =card.getBoundingClientRect().top;
+    if(top <trigger)
+    card.classList.add('reveal');
+});
+                });
+                </script>
+                </body>
+                </html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    </head>
